@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showScreenshot.image = #imageLiteral(resourceName: "thePrestige")
+        showScreenshot.image = #imageLiteral(resourceName: "pulpFiction")
         showScreenshot.contentMode = .scaleAspectFit
     }
 
