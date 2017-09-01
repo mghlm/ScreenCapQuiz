@@ -19,7 +19,7 @@
 		915D1D7F1F599CED00414E7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915D1D811F599CED00414E7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		915D1D841F599CED00414E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		915D1D861F599CED00414E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		915D1D861F599CED00414E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScreenCapQuiz/Assets.xcassets; sourceTree = "<group>"; };
 		915D1D891F599CED00414E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915D1D8B1F599CED00414E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,14 +54,48 @@
 		915D1D7E1F599CED00414E7D /* ScreenCapQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				915D1D7F1F599CED00414E7D /* AppDelegate.swift */,
-				915D1D811F599CED00414E7D /* ViewController.swift */,
-				915D1D831F599CED00414E7D /* Main.storyboard */,
+				915D1D931F59A0B500414E7D /* Controller */,
+				915D1D911F59A07B00414E7D /* Model */,
+				915D1D921F59A08300414E7D /* View */,
+				915D1D941F59A15000414E7D /* Supporting Files */,
+			);
+			path = ScreenCapQuiz;
+			sourceTree = "<group>";
+		};
+		915D1D911F59A07B00414E7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		915D1D921F59A08300414E7D /* View */ = {
+			isa = PBXGroup;
+			children = (
 				915D1D861F599CED00414E7D /* Assets.xcassets */,
+				915D1D831F599CED00414E7D /* Main.storyboard */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		915D1D931F59A0B500414E7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				915D1D811F599CED00414E7D /* ViewController.swift */,
+				915D1D7F1F599CED00414E7D /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		915D1D941F59A15000414E7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				915D1D881F599CED00414E7D /* LaunchScreen.storyboard */,
 				915D1D8B1F599CED00414E7D /* Info.plist */,
 			);
-			path = ScreenCapQuiz;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +185,7 @@
 				915D1D841F599CED00414E7D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ScreenCapQuiz;
 			sourceTree = "<group>";
 		};
 		915D1D881F599CED00414E7D /* LaunchScreen.storyboard */ = {
