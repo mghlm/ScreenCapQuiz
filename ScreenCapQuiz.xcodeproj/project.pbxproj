@@ -12,6 +12,7 @@
 		915D1D851F599CED00414E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915D1D831F599CED00414E7D /* Main.storyboard */; };
 		915D1D871F599CED00414E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915D1D861F599CED00414E7D /* Assets.xcassets */; };
 		915D1D8A1F599CED00414E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915D1D881F599CED00414E7D /* LaunchScreen.storyboard */; };
+		915D1D961F5D502B00414E7D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915D1D951F5D502B00414E7D /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		915D1D861F599CED00414E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ScreenCapQuiz/Assets.xcassets; sourceTree = "<group>"; };
 		915D1D891F599CED00414E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915D1D8B1F599CED00414E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915D1D951F5D502B00414E7D /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		915D1D911F59A07B00414E7D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				915D1D951F5D502B00414E7D /* Movie.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -173,6 +176,7 @@
 			files = (
 				915D1D821F599CED00414E7D /* ViewController.swift in Sources */,
 				915D1D801F599CED00414E7D /* AppDelegate.swift in Sources */,
+				915D1D961F5D502B00414E7D /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
