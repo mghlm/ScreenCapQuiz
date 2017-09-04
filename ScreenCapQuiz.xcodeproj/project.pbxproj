@@ -14,6 +14,7 @@
 		915D1D8A1F599CED00414E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915D1D881F599CED00414E7D /* LaunchScreen.storyboard */; };
 		915D1D961F5D502B00414E7D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915D1D951F5D502B00414E7D /* Movie.swift */; };
 		915D1D9A1F5D518300414E7D /* MoviesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915D1D991F5D518300414E7D /* MoviesScreen.swift */; };
+		915D1D9E1F5D56B200414E7D /* MovieBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915D1D9D1F5D56B200414E7D /* MovieBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		915D1D8B1F599CED00414E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915D1D951F5D502B00414E7D /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		915D1D991F5D518300414E7D /* MoviesScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesScreen.swift; sourceTree = "<group>"; };
+		915D1D9D1F5D56B200414E7D /* MovieBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				915D1D951F5D502B00414E7D /* Movie.swift */,
 				915D1D991F5D518300414E7D /* MoviesScreen.swift */,
+				915D1D9D1F5D56B200414E7D /* MovieBank.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -179,6 +182,7 @@
 			files = (
 				915D1D9A1F5D518300414E7D /* MoviesScreen.swift in Sources */,
 				915D1D821F599CED00414E7D /* ViewController.swift in Sources */,
+				915D1D9E1F5D56B200414E7D /* MovieBank.swift in Sources */,
 				915D1D801F599CED00414E7D /* AppDelegate.swift in Sources */,
 				915D1D961F5D502B00414E7D /* Movie.swift in Sources */,
 			);
