@@ -101,6 +101,7 @@
                         <outlet property="movie2" destination="s99-a3-MXC" id="9lT-Ed-Bak"/>
                         <outlet property="movie3" destination="TER-Cn-Kw3" id="k5L-Mv-QOp"/>
                         <outlet property="movie4" destination="JR1-D1-NCr" id="Y0Z-aB-aCS"/>
+                        <outlet property="screenshot" destination="mz6-vt-M6r" id="1AC-xB-aL8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

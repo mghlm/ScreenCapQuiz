@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var pickedAnswer: String?
     var screenshotNumber = 0
     
-    
+
     @IBOutlet weak var screenshot: UIImageView!
     
     
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         screenshot.image = #imageLiteral(resourceName: "pulpFiction")
+        nextMovieScreen()
     }
     
     @IBAction func answerPressed(sender: AnyObject) {
@@ -48,8 +49,10 @@ class ViewController: UIViewController {
             movie2.setTitle(currentMovieScreen.movie2.name, for: [])
             movie3.setTitle(currentMovieScreen.movie3.name, for: [])
             movie4.setTitle(currentMovieScreen.movie4.name, for: [])
+        } else {
+            let alert = UIAlertController(title: "Awesome!", message: "You've finished all the screenshots!", preferredStyle: .alert)
+            present(alert, animated: true, completion: nil)
         }
-        
     }
     
     

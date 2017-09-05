@@ -10,6 +10,8 @@ import Foundation
 
 class MoviesScreen {
     
+    
+    
     let movie1: Movie
     let movie2: Movie
     let movie3: Movie
