@@ -96,6 +96,12 @@
                             <constraint firstItem="09w-2w-i2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfb-TX-ZZf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movie1" destination="09w-2w-i2v" id="vkG-Hp-8Wh"/>
+                        <outlet property="movie2" destination="s99-a3-MXC" id="9lT-Ed-Bak"/>
+                        <outlet property="movie3" destination="TER-Cn-Kw3" id="k5L-Mv-QOp"/>
+                        <outlet property="movie4" destination="JR1-D1-NCr" id="Y0Z-aB-aCS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
