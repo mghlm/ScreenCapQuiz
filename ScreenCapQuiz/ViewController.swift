@@ -11,14 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var showScreenshot: UIImageView!
-
+    @IBOutlet weak var screenshot: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        showScreenshot.image = #imageLiteral(resourceName: "pulpFiction")
-        showScreenshot.contentMode = .scaleAspectFit
+        screenshot.image = #imageLiteral(resourceName: "pulpFiction")
     }
-
-    //test 
 }
 
