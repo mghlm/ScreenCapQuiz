@@ -31,6 +31,23 @@ class ViewController: UIViewController {
         
     }
     
+    func checkAnswer() {
+        var correctAnswer: String
+        
+        let movieScreen = allMovieScreens.movieScreens[screenshotNumber]
+        
+        if movieScreen.movie1.correctAnswer {
+            correctAnswer = movieScreen.movie1.name
+        } else if movieScreen.movie2.correctAnswer {
+            correctAnswer = movieScreen.movie2.name
+        } else if movieScreen.movie3.correctAnswer {
+            correctAnswer = movieScreen.movie3.name
+        } else {
+            correctAnswer = movieScreen.movie4.name
+        }
+        
+    }
+    
     
     
     func nextScreenshot() {
