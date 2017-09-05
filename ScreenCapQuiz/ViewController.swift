@@ -10,13 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let allMovieScreens = MovieBank()
+    
+    var movieScreenNumber = 0
+    var pickedAnswer: String?
+    var screenshotNumber = 0
+    
     
     @IBOutlet weak var screenshot: UIImageView!
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         screenshot.image = #imageLiteral(resourceName: "pulpFiction")
+    }
+    
+    @IBAction func answerPressed(sender: AnyObject) {
+        
+    }
+    
+    
+    
+    func nextScreenshot() {
+        
     }
 }
 
