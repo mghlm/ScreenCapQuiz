@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var pickedAnswer: String?
     var screenshotNumber = 0
     var score = 0
+    var numberOfTotalScreenshots: Int?
     
 
     @IBOutlet weak var screenshot: UIImageView!
@@ -29,6 +30,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var movie4: UIButton!
     
+    @IBOutlet weak var progressBar: UIView!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var progressBarWidthConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,17 +49,34 @@ class ViewController: UIViewController {
         nextMovieScreen()
     }
     
+    func updateUI() {
+        
+        if movieBank.movieScreens.count > 0 {
+            numberOfTotalScreenshots = movieBank.movieScreens.count
+        }
+        scoreLabel.text = "Score: \(score)"
+        progressBarWidthConstraint.constant = (view.frame.size.width / CGFloat(numberOfTotalScreenshots!)) * CGFloat(screenshotNumber + 1)
+
+        
+    }
+    
+    
+    
     
     func nextMovieScreen() {
         let allMovieScreens = movieBank.movieScreens
         let currentMovieScreen = movieBank.movieScreens[screenshotNumber]
         
         if screenshotNumber < allMovieScreens.count {
+            
             screenshot.image = movieBank.movieScreens[screenshotNumber].screenshot
+            
             movie1.setTitle(currentMovieScreen.movie1.name, for: [])
             movie2.setTitle(currentMovieScreen.movie2.name, for: [])
             movie3.setTitle(currentMovieScreen.movie3.name, for: [])
             movie4.setTitle(currentMovieScreen.movie4.name, for: [])
+            
+            updateUI()
         } else {
             let alert = UIAlertController(title: "Awesome!", message: "You've finished all the screenshots!", preferredStyle: .alert)
             present(alert, animated: true, completion: nil)
