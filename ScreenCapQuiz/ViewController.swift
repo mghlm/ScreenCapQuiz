@@ -58,14 +58,9 @@ class ViewController: UIViewController {
             numberOfTotalScreenshots = movieBank.movieScreens.count
         }
         scoreLabel.text = "Score: \(score)"
-        progressLabel.text = "\(screenshotNumber) / \(numberOfTotalScreenshots!)"
+        progressLabel.text = "\(screenshotNumber + 1) / \(numberOfTotalScreenshots!)"
         progressBarWidthConstraint.constant = (view.frame.size.width / CGFloat(numberOfTotalScreenshots!)) * CGFloat(screenshotNumber + 1)
-
-        
     }
-    
-    
-    
     
     func nextMovieScreen() {
         let allMovieScreens = movieBank.movieScreens
@@ -86,6 +81,7 @@ class ViewController: UIViewController {
             
             let alertRestart = UIAlertAction(title: "Restart?", style: .default, handler: { (UIAlertAction) in self.startOver() } )
             
+            scoreLabel.text = "Score: \(score)"
             alert.addAction(alertRestart)
             present(alert, animated: true, completion: nil)
         }
