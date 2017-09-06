@@ -73,19 +73,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-yg-TAk">
-                                <rect key="frame" x="313" y="626" width="42" height="21"/>
+                                <rect key="frame" x="313" y="609" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2k-z7-SKp">
                                 <rect key="frame" x="0.0" y="650" width="148" height="17"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.68758768150000005" green="0.89034320550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="7sU-2L-PbK"/>
                                     <constraint firstAttribute="width" constant="148" id="bM8-F4-pM1"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liI-OO-X3e">
+                                <rect key="frame" x="20" y="609" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -100,17 +106,19 @@
                             <constraint firstAttribute="trailing" secondItem="s99-a3-MXC" secondAttribute="trailing" constant="20" id="TrJ-YV-BeR"/>
                             <constraint firstItem="TER-Cn-Kw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UaN-K3-Gch"/>
                             <constraint firstAttribute="trailing" secondItem="TER-Cn-Kw3" secondAttribute="trailing" constant="20" id="Uzi-r3-nR8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9B4-yg-TAk" secondAttribute="bottom" constant="20" id="VXh-tM-lv4"/>
                             <constraint firstItem="mz6-vt-M6r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wzn-8z-WRn"/>
+                            <constraint firstItem="z2k-z7-SKp" firstAttribute="top" secondItem="liI-OO-X3e" secondAttribute="bottom" constant="20" id="apb-ef-Gho"/>
                             <constraint firstItem="s99-a3-MXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOr-lL-bJ5"/>
                             <constraint firstItem="JR1-D1-NCr" firstAttribute="top" secondItem="TER-Cn-Kw3" secondAttribute="bottom" constant="20" id="fHB-XL-9AX"/>
                             <constraint firstItem="TER-Cn-Kw3" firstAttribute="top" secondItem="s99-a3-MXC" secondAttribute="bottom" constant="20" id="h0T-VW-wQo"/>
                             <constraint firstItem="s99-a3-MXC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="h7c-em-KIp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9B4-yg-TAk" secondAttribute="bottom" constant="37" id="iiO-tl-P48"/>
                             <constraint firstAttribute="trailing" secondItem="09w-2w-i2v" secondAttribute="trailing" constant="20" id="ir3-FP-Pvr"/>
                             <constraint firstAttribute="trailing" secondItem="JR1-D1-NCr" secondAttribute="trailing" constant="20" id="ocL-SJ-hJi"/>
                             <constraint firstItem="s99-a3-MXC" firstAttribute="top" secondItem="09w-2w-i2v" secondAttribute="bottom" constant="20" id="ooD-Hm-Auq"/>
                             <constraint firstItem="z2k-z7-SKp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pec-Ht-6Nq"/>
                             <constraint firstItem="JR1-D1-NCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="psM-gB-7KX"/>
+                            <constraint firstItem="liI-OO-X3e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qyL-GA-xqa"/>
                             <constraint firstItem="09w-2w-i2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfb-TX-ZZf"/>
                         </constraints>
                     </view>
@@ -121,6 +129,7 @@
                         <outlet property="movie4" destination="JR1-D1-NCr" id="Y0Z-aB-aCS"/>
                         <outlet property="progressBar" destination="z2k-z7-SKp" id="3yf-u6-QR8"/>
                         <outlet property="progressBarWidthConstraint" destination="bM8-F4-pM1" id="931-nT-zBX"/>
+                        <outlet property="progressLabel" destination="liI-OO-X3e" id="Xlx-81-qmA"/>
                         <outlet property="scoreLabel" destination="9B4-yg-TAk" id="IK4-ej-WRt"/>
                         <outlet property="screenshot" destination="mz6-vt-M6r" id="1AC-xB-aL8"/>
                     </connections>

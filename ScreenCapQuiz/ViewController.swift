@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var progressLabel: UILabel!
+    
+    
     @IBOutlet weak var progressBarWidthConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -55,6 +58,7 @@ class ViewController: UIViewController {
             numberOfTotalScreenshots = movieBank.movieScreens.count
         }
         scoreLabel.text = "Score: \(score)"
+        progressLabel.text = "\(screenshotNumber) / \(numberOfTotalScreenshots!)"
         progressBarWidthConstraint.constant = (view.frame.size.width / CGFloat(numberOfTotalScreenshots!)) * CGFloat(screenshotNumber + 1)
 
         
@@ -65,20 +69,24 @@ class ViewController: UIViewController {
     
     func nextMovieScreen() {
         let allMovieScreens = movieBank.movieScreens
-        let currentMovieScreen = movieBank.movieScreens[screenshotNumber]
         
         if screenshotNumber < allMovieScreens.count {
             
+            let currentMovieScreen = movieBank.movieScreens[screenshotNumber]
             screenshot.image = movieBank.movieScreens[screenshotNumber].screenshot
             
             movie1.setTitle(currentMovieScreen.movie1.name, for: [])
             movie2.setTitle(currentMovieScreen.movie2.name, for: [])
             movie3.setTitle(currentMovieScreen.movie3.name, for: [])
             movie4.setTitle(currentMovieScreen.movie4.name, for: [])
-            
             updateUI()
+            
         } else {
             let alert = UIAlertController(title: "Awesome!", message: "You've finished all the screenshots!", preferredStyle: .alert)
+            
+            let alertRestart = UIAlertAction(title: "Restart?", style: .default, handler: { (UIAlertAction) in self.startOver() } )
+            
+            alert.addAction(alertRestart)
             present(alert, animated: true, completion: nil)
         }
     }
@@ -108,6 +116,12 @@ class ViewController: UIViewController {
             print("Wrong")
         }
         
+    }
+    
+    func startOver() {
+        score = 0
+        screenshotNumber = 0
+        nextMovieScreen()
     }
     
 }
