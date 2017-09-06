@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var movieScreenNumber = 0
     var pickedAnswer: String?
     var screenshotNumber = 0
+    var score = 0
     
 
     @IBOutlet weak var screenshot: UIImageView!
@@ -31,12 +32,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        screenshot.image = #imageLiteral(resourceName: "pulpFiction")
+        
         nextMovieScreen()
     }
     
-    @IBAction func answerPressed(sender: AnyObject) {
-        pickedAnswer = sender.text
+    @IBAction func answerPressed(sender: UIButton) {
+        pickedAnswer = sender.title(for: [])
+        checkAnswer()
+        screenshotNumber += 1
+        nextMovieScreen()
     }
     
     
@@ -45,6 +49,7 @@ class ViewController: UIViewController {
         let currentMovieScreen = movieBank.movieScreens[screenshotNumber]
         
         if screenshotNumber < allMovieScreens.count {
+            screenshot.image = movieBank.movieScreens[screenshotNumber].screenshot
             movie1.setTitle(currentMovieScreen.movie1.name, for: [])
             movie2.setTitle(currentMovieScreen.movie2.name, for: [])
             movie3.setTitle(currentMovieScreen.movie3.name, for: [])
@@ -57,7 +62,7 @@ class ViewController: UIViewController {
     
     
     func checkAnswer() {
-        var correctAnswer: String
+        var correctAnswer = ""
         
         let movieScreen = movieBank.movieScreens[screenshotNumber]
         
@@ -67,22 +72,20 @@ class ViewController: UIViewController {
             correctAnswer = movieScreen.movie2.name
         } else if movieScreen.movie3.correctAnswer {
             correctAnswer = movieScreen.movie3.name
-        } else {
+        } else if movieScreen.movie4.correctAnswer {
             correctAnswer = movieScreen.movie4.name
         }
         
         if correctAnswer == pickedAnswer {
+            print("You chose \(pickedAnswer!)")
             print("Correct")
+            score += 1
         } else {
+            print("You chose \(pickedAnswer!)")
             print("Wrong")
         }
         
     }
     
-    
-    
-    func nextScreenshot() {
-        
-    }
 }
 

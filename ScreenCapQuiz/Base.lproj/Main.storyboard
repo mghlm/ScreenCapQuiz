@@ -23,51 +23,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09w-2w-i2v">
-                                <rect key="frame" x="20" y="291" width="335" height="50"/>
+                                <rect key="frame" x="20" y="291.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="qd2-xl-pib"/>
                                 </constraints>
                                 <state key="normal" title="Movie1"/>
                                 <connections>
-                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPb-9w-3RP"/>
+                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3M-tZ-B25"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s99-a3-MXC">
-                                <rect key="frame" x="20" y="361" width="335" height="50"/>
+                                <rect key="frame" x="20" y="361.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="0t4-c5-lCd"/>
                                 </constraints>
                                 <state key="normal" title="Movie2"/>
                                 <connections>
-                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ndm-1e-eBY"/>
+                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwl-bo-7hU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TER-Cn-Kw3">
-                                <rect key="frame" x="20" y="431" width="335" height="50"/>
+                                <rect key="frame" x="20" y="431.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="OaT-UZ-9qH"/>
                                 </constraints>
                                 <state key="normal" title="Movie3"/>
                                 <connections>
-                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYp-Cp-ZAA"/>
+                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZy-K2-4JI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR1-D1-NCr">
-                                <rect key="frame" x="20" y="501" width="335" height="50"/>
+                                <rect key="frame" x="20" y="501.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="G3V-Zn-Qba"/>
                                 </constraints>
                                 <state key="normal" title="Movie4"/>
                                 <connections>
-                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qK9-U6-Zij"/>
+                                    <action selector="answerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFG-3E-M0A"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-vt-M6r">
-                                <rect key="frame" x="0.0" y="50" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="211.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mz6-vt-M6r" secondAttribute="height" multiplier="16:9" id="1iA-nu-Zrg"/>
                                 </constraints>

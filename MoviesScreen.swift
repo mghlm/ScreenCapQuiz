@@ -7,17 +7,19 @@
 //
 
 import Foundation
+import UIKit
 
 class MoviesScreen {
     
-    
+    let screenshot: UIImage
     
     let movie1: Movie
     let movie2: Movie
     let movie3: Movie
     let movie4: Movie
     
-    init(movie1: Movie, movie2: Movie, movie3: Movie, movie4: Movie) {
+    init(movie1: Movie, movie2: Movie, movie3: Movie, movie4: Movie, screenshot: UIImage) {
+        self.screenshot = screenshot
         self.movie1 = movie1
         self.movie2 = movie2
         self.movie3 = movie3

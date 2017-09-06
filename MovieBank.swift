@@ -16,22 +16,25 @@ class MovieBank {
         movieScreens.append(MoviesScreen(movie1: Movie(name: "Pulp Fiction", correctAnswer: true),
                                         movie2: Movie(name: "The Prestige", correctAnswer: false),
                                         movie3: Movie(name: "Leon", correctAnswer: false),
-                                        movie4: Movie(name: "Goodfellas", correctAnswer: false)))
-        
+                                        movie4: Movie(name: "Goodfellas", correctAnswer: false),
+                                        screenshot: #imageLiteral(resourceName: "pulpFiction")))
         movieScreens.append(MoviesScreen(movie1: Movie(name: "Pulp Fiction", correctAnswer: false),
                                          movie2: Movie(name: "The Prestige", correctAnswer: false),
                                          movie3: Movie(name: "Leon", correctAnswer: true),
-                                         movie4: Movie(name: "Goodfellas", correctAnswer: false)))
+                                         movie4: Movie(name: "Goodfellas", correctAnswer: false),
+                                         screenshot: #imageLiteral(resourceName: "leon")))
         
         movieScreens.append(MoviesScreen(movie1: Movie(name: "Pulp Fiction", correctAnswer: false),
                                          movie2: Movie(name: "The Prestige", correctAnswer: false),
                                          movie3: Movie(name: "Leon", correctAnswer: false),
-                                         movie4: Movie(name: "Goodfellas", correctAnswer: true)))
+                                         movie4: Movie(name: "Goodfellas", correctAnswer: true),
+                                         screenshot: #imageLiteral(resourceName: "goodfellas")))
         
         movieScreens.append(MoviesScreen(movie1: Movie(name: "Pulp Fiction", correctAnswer: false),
                                          movie2: Movie(name: "The Prestige", correctAnswer: true),
                                          movie3: Movie(name: "Leon", correctAnswer: false),
-                                         movie4: Movie(name: "Goodfellas", correctAnswer: false)))
+                                         movie4: Movie(name: "Goodfellas", correctAnswer: false),
+                                         screenshot: #imageLiteral(resourceName: "thePrestige")))
         
     }
 }
